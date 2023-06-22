@@ -266,7 +266,7 @@ def scytale_cipher(message, shift):
 scytale_cipher("Information_age", 3)
 
 
-# In[56]:
+# In[22]:
 
 
 def scytale_decipher(message, shift):
@@ -303,14 +303,13 @@ def scytale_decipher(message, shift):
         for row in range(num_rows):
             index = row * num_cols + col
             decoded_message += message[index]
-    decoded_message = decoded_message.rstrip('_')
     return decoded_message
 
 
-# In[59]:
+# In[23]:
 
 
-scytale_decipher("IMNNA_FTAOIGROE", 3)
+scytale_decipher("IRIANMOGFANEOT__", 4)
 
 
 # In[ ]:
